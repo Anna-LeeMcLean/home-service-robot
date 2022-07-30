@@ -24,7 +24,9 @@
  
  `./test_slam.sh`
  
- Drive the robot around using the teleop terminal which launches automatically.
+ Drive the robot around using the teleop terminal which launches automatically. You may need to make the test_slam.sh file executable using:
+ 
+ `chmod +x test_slam.sh`
  
  ---
  The robot is able to locailze itself with the given pgm map of the environment. This is done using the [ROS amcl package](http://wiki.ros.org/amcl). 
@@ -35,7 +37,9 @@
  
  `./test_navigation.sh`
  
- After setting some 2D nav goals using the RVIZ gui, you will see the pose array which represents the robot's estimated pose converge towards the robot.
+ After setting some 2D nav goals using the RVIZ gui, you will see the pose array which represents the robot's estimated pose converge towards the robot. You may need to make the test_navigation.sh file executable using:
+ 
+ `chmod +x test_navigation.sh`
  
  ---
  The robot is also able to navigate towards goals which are given through a script. This is done using the ROS navigation stack which creates a path for your robot 
@@ -55,4 +59,6 @@
  `./home_service`
  
  
+ You may need to make the home_service.sh file executable using:
  
+ `chmod +x home_service.sh`
