@@ -1,8 +1,0 @@
-prefix=/home/workspace/catkin_ws/install
-
-Name: rvizConfig
-Description: Description of rvizConfig
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
