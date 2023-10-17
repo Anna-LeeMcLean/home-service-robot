@@ -45,19 +45,21 @@ int main( int argc, char** argv )
 
   // Set the dropoff locations
   double marker_x1 = 1.0;
-  double marker_y1 = 7.0;
+  double marker_y1 = 2.0;
   double marker_w1 = 0.4;
-  n.setParam("marker_x1", marker_x1);
-  n.setParam("marker_y1", marker_y1);
-  n.setParam("marker_w1", marker_w1);
+  n.setParam("/marker_x1", marker_x1);
+  n.setParam("/marker_y1", marker_y1);
+  n.setParam("/marker_w1", marker_w1);
 
   // Set the pickup locations
-  double marker_x2 = -4.5;
-  double marker_y2 = -4.5;
+  double marker_x2 = 1.5;
+  double marker_y2 = -0.5;
   double marker_w2 = 0.4;
-  n.setParam("marker_x2", marker_x2);
-  n.setParam("marker_y2", marker_y2);
-  n.setParam("marker_w2", marker_w2);
+  n.setParam("/marker_x2", marker_x2);
+  n.setParam("/marker_y2", marker_y2);
+  n.setParam("/marker_w2", marker_w2);
+  
+  ROS_INFO("Params for pickup and dropoff locations set.");
 
   while (ros::ok())
   {

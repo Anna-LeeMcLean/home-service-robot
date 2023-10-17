@@ -32,7 +32,7 @@ int main( int argc, char** argv )
 
     // Set the pose of the marker.  This is a full 6DOF pose relative to the frame/time specified in the header
     marker.pose.position.x = 1.0;
-    marker.pose.position.y = 7.0;
+    marker.pose.position.y = 2.0;
     marker.pose.position.z = 0;
     marker.pose.orientation.x = 0.0;
     marker.pose.orientation.y = 0.0;
@@ -76,8 +76,8 @@ int main( int argc, char** argv )
 
     // Add marker at drop off location
     marker.action = visualization_msgs::Marker::ADD;
-    marker.pose.position.x = -4.5;
-    marker.pose.position.y = -4.5;
+    marker.pose.position.x = 1.5;
+    marker.pose.position.y = -0.5;
     marker.pose.position.z = 0;
     marker.pose.orientation.x = 0.0;
     marker.pose.orientation.y = 0.0;

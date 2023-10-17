@@ -33,9 +33,16 @@ int main(int argc, char** argv){
   double goal_x1;
   double goal_y1;
   double goal_w1;
-  n.getParam("marker_x1", goal_x1);
-  n.getParam("marker_y1", goal_y1);
-  n.getParam("marker_w1", goal_w1);
+  n.getParam("/marker_x1", goal_x1);
+  n.getParam("/marker_y1", goal_y1);
+  n.getParam("/marker_w1", goal_w1);
+  
+  if (!n.hasParam("/marker_x1"))
+  {
+    ROS_INFO("no param for marker_x1 received.");
+  }
+
+  ROS_INFO("goal_x1: %f, goal_y1: %f, goal_w1: %f", goal_x1, goal_y1, goal_w1);
   goal1.target_pose.pose.position.x = goal_x1;
   goal1.target_pose.pose.position.y = goal_y1;
   goal1.target_pose.pose.orientation.w = goal_w1;
@@ -71,9 +78,10 @@ int main(int argc, char** argv){
   double goal_x2;
   double goal_y2;
   double goal_w2;
-  n.getParam("marker_x2", goal_x2);
-  n.getParam("marker_y2", goal_y2);
-  n.getParam("marker_w2", goal_w2);
+  n.getParam("/marker_x2", goal_x2);
+  n.getParam("/marker_y2", goal_y2);
+  n.getParam("/marker_w2", goal_w2);
+  ROS_INFO("goal_x2: %f, goal_y2: %f, goal_w2: %f", goal_x2, goal_y2, goal_w2);
   goal2.target_pose.pose.position.x = goal_x2;
   goal2.target_pose.pose.position.y = goal_y2;
   goal2.target_pose.pose.orientation.w = goal_w2;
