@@ -88,3 +88,5 @@
  You may need to make the home_service.sh file executable using:
  
  `chmod +x home_service.sh`
+
+ [Home Service Robot Video](https://drive.google.com/file/d/1DEjxUaPUiYFTJSc87Tr5GcejvSPp2mE2/view?usp=sharing)
