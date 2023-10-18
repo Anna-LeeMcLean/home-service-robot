@@ -26,6 +26,6 @@
   </include>
 
   <!--launch rviz-->
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rvizConfig)/view_navigation_w_markers.rviz" respawn="false"/>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rviz_configs)/view_navigation_w_markers.rviz" respawn="false"/>
 
 </launch>
