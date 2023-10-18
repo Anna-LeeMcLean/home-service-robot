@@ -1,6 +1,0 @@
-<!--
-  Used for visualising my robot while building a map or navigating with the ros navistack.
- -->
-<launch>
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rvizConfig)/view_myrobot_navigation.rviz"/>
-</launch>
